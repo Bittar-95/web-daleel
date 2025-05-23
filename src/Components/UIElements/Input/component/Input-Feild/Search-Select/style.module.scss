@@ -1,0 +1,144 @@
+@use "../../../style/style.module" as *;
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.containerField {
+  @extend %containerFeild;
+  background-color: var(--bg-3);
+  height: 2.6rem !important;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 30rem;
+  transition: max-width 0.3s ease;
+
+  @media (min-width: 1024px) {
+    &.focusedExpand {
+      width: 25rem !important;
+    }
+  }
+}
+
+.icons {
+  color: var(--bg-1);
+  font-size: 1.3rem;
+}
+
+.DropDown {
+  @extend %dropDown;
+  width: 100%;
+  left: 0;
+  top: 2.9rem;
+  padding: 0;
+  color: var(--text-1);
+  transition: max-height 0.5s ease-in-out;
+  height: 18rem;
+
+  .inner {
+    overflow-y: auto;
+    height: 18rem;
+    animation: fadeSlide 0.4s ease;
+  }
+}
+
+.fullScreenDropdown {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  animation: fadeSlide 0.4s ease;
+}
+
+.mobileHeader {
+  display: flex;
+  justify-content: flex-end;
+  padding: 3rem 0rem;
+}
+
+.closeIcon {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #000;
+}
+
+.mobileInputWrapper {
+  margin: 1rem 0;
+}
+
+.mobileInput {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1.2rem;
+  border: 1px solid var(--bg-2);
+  border-radius: 0.5rem;
+  background-color: var(--bg-3);
+  color: var(--text-1);
+}
+
+.options {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  text-align: start;
+
+  &:hover {
+    background-color: rgba(192, 192, 192, 0.24);
+    border-radius: 0.5rem;
+    margin: 0.2rem;
+    .divider {
+      border: none;
+    }
+  }
+
+  .mainText {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-1);
+  }
+
+  .subText {
+    font-size: 0.9rem;
+    color: var(--text-4);
+  }
+
+  .divider {
+    margin-top: 0.5rem;
+    border-bottom: 1px solid var(--bg-6);
+  }
+}
+
+.SearchPlease {
+  height: 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-2);
+  font-size: 1.2rem;
+}
+
+.ContainerLoading {
+  padding: 1rem 1rem;
+}
+
+.containerAll {
+  width: 100%;
+}
+
+.titleInner{
+  color: var(--text-4);
+  text-align: right;
+  padding: .5rem 1rem;
+}

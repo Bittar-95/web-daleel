@@ -1,0 +1,95 @@
+.typeTwo, .typeOne {
+  -webkit-transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.typeTwo:hover, .typeOne:hover {
+  background-color: var(--bg-10) !important;
+  color: var(--text-3);
+}
+
+.typeTwo:hover:hover, .typeTwo:hover:focus, .typeTwo:hover:active, .typeOne:hover:hover, .typeOne:hover:focus, .typeOne:hover:active {
+  cursor: pointer !important;
+  font-weight: bold !important;
+}
+
+.typeTwo:hover:hover path, .typeTwo:hover:focus path, .typeTwo:hover:active path, .typeOne:hover:hover path, .typeOne:hover:focus path, .typeOne:hover:active path {
+  stroke: var(--bg-3);
+}
+
+.typeTwo:active, .typeOne:active {
+  background-color: #202D61;
+  color: var(--text-3);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.typeTwo:disabled, .typeOne:disabled {
+  background-color: var(--bg-8) !important;
+  color: var(--text-4) !important;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border: 1px solid silver;
+  opacity: .7;
+}
+
+.typeTwo:disabled path, .typeOne:disabled path {
+  stroke: var(--text-4);
+}
+
+.loading {
+  background-color: var(--bg-1) !important;
+  min-width: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.typeTwo {
+  color: var(--text-3) !important;
+  padding: .35rem .7rem !important;
+  border-radius: .7rem !important;
+  border: 1px solid var(--bg-2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.typeOne {
+  background-color: var(--bg-2) !important;
+  color: var(--text-3) !important;
+  padding: .7rem 1.7rem !important;
+  border-radius: .4rem !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+/*# sourceMappingURL=style.module.css.map */

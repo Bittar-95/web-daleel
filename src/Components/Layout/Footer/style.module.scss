@@ -1,0 +1,36 @@
+.footer {
+    background-color: var(--bg-2);
+    color: var(--text-3);
+    gap: 1rem;
+    @extend %containerPage;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    .LogoOne{
+        width: 6.7rem;
+        height: 3.2rem;
+    }
+    .LogoTwo{
+        width: 11rem;
+        height: 2.9rem;
+    }
+} 
+
+@media screen and (max-width: $break-point) {
+    .footer{
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+    }
+    .mainContainer{
+        flex-direction: column-reverse !important;
+        gap: 1rem;
+    }
+    .LogoOne{
+        width: 8rem;
+        height: 3.5rem;
+    }
+    .LogoTwo{
+        width: 13rem;
+        height: 3.5rem;
+    }
+  
+  }

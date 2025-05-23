@@ -1,0 +1,132 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skeleton {
+  position: relative;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  border-radius: .5rem;
+  margin-bottom: .7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skeleton.dark {
+  background-color: #121212;
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  right: -150%;
+  width: auto;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(161, 161, 161, 0.397)), to(transparent));
+  background-image: linear-gradient(90deg, transparent, rgba(161, 161, 161, 0.397), transparent);
+  -webkit-animation: shimmer 1.5s infinite linear;
+          animation: shimmer 1.5s infinite linear;
+}
+
+@-webkit-keyframes shimmer {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+.square, .rectangle, .chart, .image {
+  width: 100%;
+  min-width: 6.25rem;
+  border-radius: .25rem;
+}
+
+.square {
+  height: 6.25rem;
+}
+
+.rectangle {
+  height: 6.25rem;
+}
+
+.chart,
+.image {
+  height: 12.5rem;
+}
+
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  color: rgba(192, 192, 192, 0.267);
+  font-size: 2.3rem;
+  -webkit-animation: scaleAnimation 2s infinite;
+          animation: scaleAnimation 2s infinite;
+}
+
+@-webkit-keyframes scaleAnimation {
+  0% {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+}
+
+@keyframes scaleAnimation {
+  0% {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+}
+/*# sourceMappingURL=style.module.css.map */

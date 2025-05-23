@@ -1,0 +1,22 @@
+{
+  "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_app": {
+    "id": 472,
+    "files": [
+      "static/chunks/472.a3826d29d6854395.js"
+    ]
+  },
+  "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_error": {
+    "id": 9341,
+    "files": [
+      "static/chunks/341.df3329d77a5faa19.js"
+    ]
+  },
+  "app\\info\\[id]\\page.tsx -> src/app/Components/Info": {
+    "id": 6694,
+    "files": [
+      "static/css/82d2bb94faf21e0a.css",
+      "static/css/943b168a466a35dc.css",
+      "static/chunks/694.9da6d6ca1ec59d57.js"
+    ]
+  }
+}

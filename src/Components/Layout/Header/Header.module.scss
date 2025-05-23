@@ -1,0 +1,117 @@
+.header {
+  color: var(--text-4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: var(--bg-5);
+  @extend %containerPage;
+
+  .content {
+    padding-bottom: 1rem;
+
+    @media screen and (min-width: $break-point) {
+      border-bottom: 0.5px solid var(--bg-1);
+      display: flex;
+
+      .logo {
+        width: 10rem;
+        height: 4.6rem;
+      }
+    }
+  }
+
+  .innerContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.14rem;
+    transition: all 0.4s ease;
+    min-width: fit-content;
+
+    a {
+      text-decoration: none;
+      color: var(--text-4);
+      font-weight: 500;
+      position: relative;
+      border-radius: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      display: inline-block;
+      transition:  all .3s;
+
+      &:hover {
+        background-color: var(--bg-1);
+        color: var(--text-3);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      }
+
+      &.active {
+        background-color: var(--bg-1);
+        color: var(--text-3);
+        border-bottom: 2px solid var(--text-3);
+      }
+    }
+  }
+
+  .toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--text-1);
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    padding: 1.4rem 1.7rem;
+    padding-top: 2.8rem;
+
+    .logo {
+      width: 8.2rem;
+      height: 3.2rem;
+    }
+
+    .nav {
+      flex-direction: column;
+      max-height: 0;
+      opacity: 0;
+      background: var(--bg-5);
+      padding: 0;
+      pointer-events: none;
+      position: fixed;
+      top: 8.4rem;
+      width: 100%;
+      right: 0;
+      transition: all 0.4s ease;
+
+      a {
+        width: calc(100vw - 5rem); 
+        text-align: center;
+        padding: 0.75rem 2rem;
+      }
+
+      .active {
+        background-color: var(--bg-1);
+        color: var(--text-3);
+      }
+    }
+
+    .show {
+      max-height: 500px;
+      opacity: 1;
+      padding: 1rem;
+      pointer-events: all;
+    }
+
+    .toggle {
+      display: block;
+    }
+  }
+}

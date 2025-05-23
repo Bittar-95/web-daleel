@@ -1,0 +1,22 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .25rem;
+  position: absolute;
+  right: 0;
+  bottom: -1.25rem;
+}
+
+.container svg {
+  margin-top: -.1rem;
+}
+
+.container .text {
+  color: var(--text-error);
+  font-size: .875rem;
+}
+/*# sourceMappingURL=style.module.css.map */

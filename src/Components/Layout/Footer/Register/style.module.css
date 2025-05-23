@@ -1,0 +1,12 @@
+.register {
+  margin-bottom: 2rem;
+  background-color: var(--bg-6);
+  padding: 2.1rem;
+}
+
+.register h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-1);
+}
+/*# sourceMappingURL=style.module.css.map */

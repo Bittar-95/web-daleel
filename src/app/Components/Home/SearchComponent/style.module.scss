@@ -1,0 +1,44 @@
+.content {
+    background-color:var(--bg-1);
+    padding: 1.5rem;
+    width: 100vw;
+    text-align: center;    
+  }
+  
+  .mainTitle {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--bg-3);
+    font-size: 1.8rem;
+  }
+  
+  .subTitle {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: var(--bg-2);
+  }
+  
+  .searchInput {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+  }
+  
+  .description {
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--bg-3);
+  }
+  
+
+  @media screen and (max-width: $break-point) {
+    .content{
+      padding: 4rem 1.5rem;
+      padding-bottom: 7rem;
+    }
+  }

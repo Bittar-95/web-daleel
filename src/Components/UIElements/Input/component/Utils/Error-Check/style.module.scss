@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    position: absolute;
+    right: 0;
+    bottom: -1.25rem;    
+    svg{
+        margin-top: -.1rem;
+    }
+    .text{
+        color:var(--text-error);
+        font-size: .875rem;
+    }
+}

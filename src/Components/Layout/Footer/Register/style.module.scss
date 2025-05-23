@@ -1,0 +1,23 @@
+.register{
+    margin-bottom: 2rem;
+    background-color: var(--bg-6);
+    padding: 2.1rem;
+    .containerInput{
+      width: 20rem;
+    }
+    h1{
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--text-1);
+    }
+  }
+  
+  @media screen and (max-width: $break-point) {
+    .register{
+      justify-content: flex-start !important;
+      align-items: flex-start !important;
+    }
+    .containerInput{
+      width: calc(100vw - 13rem) !important;
+    }
+  }
